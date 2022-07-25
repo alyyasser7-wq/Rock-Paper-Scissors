@@ -1,0 +1,88 @@
+:root{
+    --primary_color:rgb(255,212,147);
+    --secondary_color:rgb(9,0,183);
+    --header_font:60px;
+    --secondary_font:24px;
+    --font_style:"Cambria"
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(3, 0, 52);
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary_color);
+    width: 180px;
+    border-radius: 10px;
+}
+.header{
+    font-size: var(--header_font);
+    color: var(--primary_color);
+    text-align: center;
+    padding-top: 50px;
+    font-family: var(--font_style),sans-serif;
+}
+.text{
+    padding-top: 15px ;
+    font-size: 30px;
+    font-family: var(--font_style),sans-serif;
+}
+.btntxt{
+    font-size: var(--secondary_font);
+    padding-top: 8px;
+    font-family: var(--font_style),sans-serif;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+    margin-top: 2%;
+}
+button{
+    border-radius: 10px;
+    border: transparent;
+    width: 150px;
+    height: 150px;
+}
+.rock{
+    background: url(../images/rock.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.paper{
+    background: url(../images/paper.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.scissors{
+    background: url(../images/scissors.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.wrapper:hover{
+    transform: scale(1.2);
+}
+.restartbtn{
+    width: 250px;
+    height: 75px;
+    background-color:var(--secondary_color);
+    color: var(--primary_color);
+    font-size: var(--secondary_font);
+    font-weight: 800;
+}
+.rdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.res{
+    padding-top:5%;
+}
